@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  Your Result
-  76
-  of 100
+    <title>Frontend Mentor | Results summary component</title>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <article class="container">
+        <div class="flex-group">
+          <div class="display_result">
+            <div class="result-container">
+              <h3 class="result">Your Result</h3>
+              <div class="circle">
+                <h1>76</h1>
+                <p class="p-summary">of 100</p>
+              </div>
+              <h2>Great</h2>
+              <p>
+                You scored higher than 65% of the people who have taken these
+                tests.
+              </p>
+            </div>
+          </div>
+          <div class="display_summary">
+            <h3 class="summary">Summary</h3>
+            <div class="summary-box">
+              <div class="box-flex">
+                <div class="category">Reaction</div>
+                <div class="score">80 / 100</div>
+              </div>
+              <div class="score"></div>
+            </div>
+            <div class="summary-box">
+              <div class="box-flex">
+                <div class="category">Memory</div>
+                <div class="score">92 / 100</div>
+              </div>
+            </div>
+            <div class="summary-box">
+              <div class="box-flex">
+                <div class="category">Verbal</div>
+                <div class="score">61 / 100</div>
+              </div>
+            </div>
+            <div class="summary-box">
+              <div class="box-flex">
+                <div class="category">Visual</div>
+                <div class="score">72 / 100</div>
+              </div>
+            </div>
+            <button class="btn">Continue</button>
+          </div>
+        </div>
+      </article>
+    </main>
 
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </div> -->
+  </body>
 </html>
